@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="faelles.css">
     <link rel="stylesheet" href="kontakt.css">
 </head>
@@ -17,13 +28,13 @@
             </a>
         </div>
         <nav>
-            <ul class="menu">
+            <ul class="menubeige">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="ommig.html">Om mig</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-            <div class="burger">
+            <div class="burgerbeige">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
@@ -32,22 +43,42 @@
     </header>
 
     <main>
+
         <div>
-            <form>
+            <h1 class="kontakth1">Kontakt mig</h1>
+            <p class="kontaktp">Jeg vil meget gerne høre fra dig! Hvis du har spørgsmål, ønsker at samarbejde, eller
+                bare vil chatte, er
+                du altid
+                velkommen til at kontakte mig.
+                <br>
+                <br>
+                Hvis du foretrækker at sende en e-mail direkte, kan du skrive til mig på
+                <a href="mailto:sara.dju4@gmail.com">sara.dju4@gmail.com</a>.
+                Du kan også bruge kontaktformularen nedenfor udfyld den, og jeg vil kontakte dig hurtigst muligt.
+            </p>
+        </div>
+
+        <div class="groenboks">
+            <form action="mailto:Sara.dju4@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Navn</label>
+                <input id="name" name="name" type="text" required>
 
                 <label for="email">E-mail</label>
-                <input id="email" name="email" type="email">
+                <input id="email" name="email" type="email" required>
 
-                <button>Send</button>
+                <label for="message">Besked</label>
+                <textarea id="message" name="message" required></textarea>
 
+                <button type="submit">Send</button>
             </form>
         </div>
+
     </main>
 
     <footer>
     </footer>
 
-    <script src="menu.js"></script>
+    <script src="menubeige.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,221 @@
+/* farver
+
+FFEEF0
+BBD3BC
+F2ECE2
+FFFFFF
+B1ADA4
+000000
+CEDFCE
+F9F6F1
+
+/* menu */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: #f4f2ec;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+  z-index: 20;
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menubeige {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menubeige li {
+  margin-right: 20px;
+}
+
+.menubeige li:last-child {
+  margin-right: 0;
+}
+
+.menubeige a {
+  display: block;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "Playfair Display";
+  font-weight: 400;
+}
+
+.menubeige a:hover {
+  color: #9eb99e;
+}
+
+.burgerbeige {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burgerbeige .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burgerbeige {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menubeige {
+    display: none;
+  }
+  .burgerbeige {
+    display: block;
+  }
+  .burgerbeige.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burgerbeige.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burgerbeige.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menubeige {
+    display: block;
+    background-color: #f4f2ec;
+    position: absolute;
+    top: 145px;
+    left: 0;
+    width: 100%;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+  }
+
+  nav.active .menubeige li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menubeige a {
+    font-size: 24px;
+  }
+}
+/* menu slut */
+
+main {
+  background-color: #f4f2ec;
+  padding: 30px;
+}
+
+footer {
+  background-color: #f4f2ec;
+}
+
+.groenboks form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #cedfce;
+  padding: 25px;
+  border-radius: 15px;
+  margin-block: 50px;
+  border: 2px solid #a8c4a2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  color: #333;
+}
+
+input,
+textarea,
+button {
+  padding: 12px;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #f4f2ec;
+  border: 1px solid #a8c4a2;
+  transition: all 0.3s ease-in-out;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+button {
+  background-color: #cedfce;
+  color: #000;
+  border: 1px solid #a8c4a2;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #9eb99e;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.kontakth1 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.kontaktp {
+  width: 100%;
+  overflow-wrap: break-word;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.kontakth1 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.kontaktp {
+  width: 100%;
+  overflow-wrap: break-word;
+  text-align: justify;
+  hyphens: auto;
+}
