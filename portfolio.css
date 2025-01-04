@@ -1,0 +1,84 @@
+/* farver
+
+FFEEF0
+BBD3BC
+FFFFFF
+000000
+CEDFCE
+F9F6F1
+d8a1a8
+F9F6F1
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #ffeef0;
+}
+
+.portfolioliste {
+  text-align: left;
+  border-inline: 3px solid #d8a1a8;
+  border-block: 3px solid #d8a1a8;
+  padding-block: 50px;
+  border-radius: 20px;
+  padding-inline: 20px;
+  max-width: 700px;
+}
+
+.portfolioul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-inline: 40px;
+  padding-block: 50px;
+  padding-bottom: 300px;
+  list-style-type: none;
+}
+
+.portfolioliste:hover {
+  background-color: #d8a1a8;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tekst1 {
+  padding-top: 20px;
+  padding-inline: 40px;
+}
+
+.pintro {
+  padding-top: 20px;
+  max-width: 65ch;
+}
+
+.tema2knap {
+  font-family: "Playfair Display";
+  color: #000000;
+  text-decoration: none;
+  font-size: large;
+}
+
+.tema3knap {
+  font-family: "Playfair Display";
+  color: #000000;
+  text-decoration: none;
+  font-size: large;
+}
+
+.tema4knap {
+  font-family: "Playfair Display";
+  color: #000000;
+  text-decoration: none;
+  font-size: large;
+}
+
+.tema5knap {
+  font-family: "Playfair Display";
+  color: #000000;
+  text-decoration: none;
+  font-size: large;
+}

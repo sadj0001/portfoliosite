@@ -1,0 +1,128 @@
+/* 
+farver
+
+FFEEF0
+BBD3BC
+F2ECE2
+FFFFFF
+B1ADA4
+d8a1a8
+000000 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  background-color: #ffeef0;
+}
+
+/* .hero {
+  position: relative;
+  text-align: center;
+} */
+
+.arrow {
+  position: absolute;
+  bottom: 20%; /* Juster afstanden fra bunden */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #000000;
+  cursor: pointer; /* Tilføjer en hånd, når man hover over pilen */
+  transition: all 0.3s ease; /* Gør pilen lidt interaktiv */
+}
+
+.arrow:hover {
+  transform: translateX(-50%) scale(1.2); /* Forstørrer pilen, når man hover */
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Sætter højden til 100% af skærmens højde */
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Sørger for at billedet dækker hele området uden at blive forvrænget */
+}
+
+.lottie-container {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  pointer-events: none; /* Tillader interaktion med underliggende elementer */
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding-inline: 20px;
+  padding-block: 20px;
+  padding-bottom: 100px;
+}
+
+.portfolioknap {
+  text-align: center;
+  border-inline: 3px solid #d8a1a8;
+  border-block: 3px solid #d8a1a8;
+  padding-block: 250px;
+  border-radius: 20px;
+  font-family: "Playfair Display";
+  color: #000000;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.ommigknap {
+  text-align: center;
+  border-inline: 3px solid #d8a1a8;
+  border-block: 3px solid #d8a1a8;
+  padding-block: 250px;
+  border-radius: 20px;
+  font-family: "Playfair Display";
+  color: #000000;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.kontaktknap {
+  text-align: center;
+  border-inline: 3px solid #d8a1a8;
+  border-block: 3px solid #d8a1a8;
+  padding-block: 250px;
+  border-radius: 20px;
+  font-family: "Playfair Display";
+  color: #000000;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.portfolioknap:hover,
+.ommigknap:hover,
+.kontaktknap:hover {
+  background-color: #d8a1a8;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+a {
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  color: #000000;
+  text-decoration: none;
+}

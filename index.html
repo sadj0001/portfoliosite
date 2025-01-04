@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="faelles.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.webp" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="ommig.html">Om mig</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero.webp" alt="hero">
+
+            <!-- Lottie animation as overlay -->
+            <div class="lottie-container">
+                <dotlottie-player src="https://lottie.host/787dd111-1cb0-42ac-b579-481199f130cb/Fpld6b8Wno.lottie"
+                    background="transparent" speed="1"
+                    style="width: 600px; height: 600px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;"
+                    autoplay count="1">
+                </dotlottie-player>
+            </div>
+
+            <div class="arrow" onclick="scrollToSection()"></div>
+        </div>
+
+        <section id="target-section">
+            <div class="grid_1_1">
+                <a class="portfolioknap" href="portfolio.html">Portfolio</a>
+
+                <a class="ommigknap" href="ommig.html">Om mig</a>
+
+                <a class="kontaktknap" href="kontakt.html">Kontakt</a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="mit.js"></script>
+</body>
+
+</html>
