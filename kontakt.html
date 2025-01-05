@@ -44,34 +44,39 @@
 
     <main>
 
-        <div>
-            <h1 class="kontakth1">Kontakt mig</h1>
-            <p class="kontaktp">Jeg vil meget gerne høre fra dig! Hvis du har spørgsmål, ønsker at samarbejde, eller
-                bare vil chatte, er
-                du altid
-                velkommen til at kontakte mig.
-                <br>
-                <br>
-                Hvis du foretrækker at sende en e-mail direkte, kan du skrive til mig på
-                <a href="mailto:sara.dju4@gmail.com">sara.dju4@gmail.com</a>.
-                Du kan også bruge kontaktformularen nedenfor udfyld den, og jeg vil kontakte dig hurtigst muligt.
-            </p>
+        <div class="grid_1_1">
+            <div>
+                <h1 class="kontakth1">Kontakt mig</h1>
+                <p class="kontaktp">Jeg vil meget gerne høre fra dig! Hvis du har spørgsmål, ønsker at samarbejde, eller
+                    bare vil sige hej, er
+                    du altid
+                    velkommen til at kontakte mig!
+                    <br>
+                    <br>
+                    Hvis du foretrækker at sende en e-mail direkte, kan du skrive til mig på
+                    <a href="mailto:sara.dju4@gmail.com">sara.dju4@gmail.com</a>.
+                    <br><br>
+                    Du kan også bruge kontaktformularen her. Udfyld den, og jeg vil kontakte dig hurtigst muligt.
+                </p>
+            </div>
+
+            <div class="groenboks">
+                <form action="mailto:Sara.dju4@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Navn</label>
+                    <input id="name" name="name" type="text" required>
+
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="message">Besked</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
 
-        <div class="groenboks">
-            <form action="mailto:Sara.dju4@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Navn</label>
-                <input id="name" name="name" type="text" required>
 
-                <label for="email">E-mail</label>
-                <input id="email" name="email" type="email" required>
-
-                <label for="message">Besked</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-        </div>
 
     </main>
 

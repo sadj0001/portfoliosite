@@ -124,8 +124,16 @@ nav {
   nav.active .menubeige a {
     font-size: 24px;
   }
+
+  /* menu slut */
+
+  .kontaktp {
+    width: 100%;
+    overflow-wrap: break-word;
+    text-align: justify;
+    hyphens: auto;
+  }
 }
-/* menu slut */
 
 main {
   background-color: #f4f2ec;
@@ -143,31 +151,33 @@ footer {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  background-color: #cedfce;
   padding: 25px;
-  border-radius: 15px;
-  margin-block: 50px;
-  border: 2px solid #a8c4a2;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.groenboks h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
 }
 
 label {
+  font-family: "Lato", sans-serif;
   font-size: 16px;
-  font-family: "Playfair Display", serif;
-  color: #333;
+  color: #000;
 }
 
 input,
-textarea,
-button {
+textarea {
   padding: 12px;
-  font-size: 15px;
+  font-size: 16px;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 10px;
-  background-color: #f4f2ec;
-  border: 1px solid #a8c4a2;
-  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  border: 1px solid #d0d0d0; /* Meget tynd grå kant */
+  transition: all 0.3s ease;
 }
 
 textarea {
@@ -176,46 +186,48 @@ textarea {
 }
 
 button {
+  padding: 12px;
+  font-size: 16px;
   background-color: #cedfce;
   color: #000;
-  border: 1px solid #a8c4a2;
-  font-size: 16px;
-  font-family: "Playfair Display", serif;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
+  font-family: "Playfair Display", serif;
 }
 
 button:hover {
-  background-color: #9eb99e;
-  transform: translateY(-2px);
+  background-color: #9eb99e; /* Mørkere grøn ved hover */
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 button:active {
-  transform: translateY(0);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .kontakth1 {
-  text-align: center;
+  text-align: left;
   padding-top: 10px;
   padding-bottom: 30px;
 }
 
-.kontaktp {
-  width: 100%;
-  overflow-wrap: break-word;
-  text-align: justify;
-  hyphens: auto;
-}
+@media screen and (min-width: 768px) {
+  .kontaktp {
+    width: 60ch;
+    margin-left: 100px;
+  }
 
-.kontakth1 {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
+  .kontakth1 {
+    text-align: left;
+    margin-left: 100px;
+  }
 
-.kontaktp {
-  width: 100%;
-  overflow-wrap: break-word;
-  text-align: justify;
-  hyphens: auto;
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 200px;
+  }
 }

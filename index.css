@@ -71,17 +71,17 @@ main {
 .grid_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  padding-inline: 20px;
+  gap: 40px;
+  padding-inline: 50px;
   padding-block: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 
 .portfolioknap {
   text-align: center;
   border-inline: 3px solid #d8a1a8;
   border-block: 3px solid #d8a1a8;
-  padding-block: 250px;
+  padding-block: 200px;
   border-radius: 20px;
   font-family: "Playfair Display";
   color: #000000;
@@ -93,7 +93,7 @@ main {
   text-align: center;
   border-inline: 3px solid #d8a1a8;
   border-block: 3px solid #d8a1a8;
-  padding-block: 250px;
+  padding-block: 200px;
   border-radius: 20px;
   font-family: "Playfair Display";
   color: #000000;
@@ -105,7 +105,7 @@ main {
   text-align: center;
   border-inline: 3px solid #d8a1a8;
   border-block: 3px solid #d8a1a8;
-  padding-block: 250px;
+  padding-block: 200px;
   border-radius: 20px;
   font-family: "Playfair Display";
   color: #000000;
@@ -125,4 +125,21 @@ a {
   font-family: Arial, Arial, Helvetica, sans-serif;
   color: #000000;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-inline: 40px;
+    padding-block: 20px;
+    padding-bottom: 100px;
+  }
+
+  .portfolioknap,
+  .ommigknap,
+  .kontaktknap {
+    padding-block: 50px;
+  }
 }

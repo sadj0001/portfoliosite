@@ -1,8 +1,8 @@
 function scrollToSection() {
   const targetSection = document.getElementById("target-section");
   targetSection.scrollIntoView({
-    behavior: "smooth", // Gør scrolle-effekten glidende
-    block: "start", // Placerer sektionen øverst på skærmen
+    behavior: "smooth",
+    block: "start",
   });
 }
 const arrow = document.querySelector(".arrow");
