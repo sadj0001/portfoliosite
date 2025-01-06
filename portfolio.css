@@ -32,7 +32,7 @@ main {
 .portfolioul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 40px;
   padding-inline: 40px;
   padding-block: 50px;
   padding-bottom: 300px;
