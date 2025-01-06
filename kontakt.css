@@ -68,6 +68,11 @@ nav {
   color: #9eb99e;
 }
 
+/* Aktiv link - streg under for beige menu */
+.menubeige a.active {
+  border-bottom: 1px solid #9eb99e; /* Farven på stregerne */
+}
+
 .burgerbeige {
   width: 30px;
   height: 20px;

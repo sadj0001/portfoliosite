@@ -23,10 +23,7 @@ main {
   background-color: #ffeef0;
 }
 
-/* .hero {
-  position: relative;
-  text-align: center;
-} */
+/* følgende med arrow har chatgpt hjælpet mig med */
 
 .arrow {
   position: absolute;
@@ -45,6 +42,7 @@ main {
 .arrow:hover {
   transform: translateX(-50%) scale(1.2); /* Forstørrer pilen, når man hover */
 }
+/* ovenstående med arrow har chatgpt hjælpet mig med */
 
 .hero {
   position: relative;
@@ -74,7 +72,8 @@ main {
   gap: 40px;
   padding-inline: 50px;
   padding-block: 20px;
-  padding-bottom: 150px;
+  padding-top: 226px;
+  padding-bottom: 200px;
 }
 
 .portfolioknap {
@@ -134,7 +133,8 @@ a {
     gap: 20px;
     padding-inline: 40px;
     padding-block: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
+    padding-top: 200px;
   }
 
   .portfolioknap,

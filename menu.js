@@ -1,3 +1,4 @@
+// Mikkels Menu
 const burger = document.querySelector(".burger");
 const nav = document.querySelector("nav");
 const menu = document.querySelector(".menu");
@@ -13,3 +14,15 @@ function menuClick() {
   burger.classList.remove("active");
   nav.classList.remove("active");
 }
+
+// Følgende har jeg brugt chatgpt til
+// Sætter en streg under den side man befinder sig på
+// Findr menulinks
+const menuLinks = document.querySelectorAll(".menu a");
+
+// Gennemgår hver link for at se hvilken side der er aktuel
+menuLinks.forEach((link) => {
+  if (window.location.pathname.endsWith(link.getAttribute("href"))) {
+    link.classList.add("active"); // Tilføj den aktive klasse
+  }
+});

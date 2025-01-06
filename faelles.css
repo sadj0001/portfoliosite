@@ -25,7 +25,6 @@ header {
   align-items: center;
   padding: 25px;
   background-color: #ffeef0;
-  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
   z-index: 20;
 }
 
@@ -68,6 +67,10 @@ nav {
   color: #d8a1a8;
 }
 
+.menu a.active {
+  border-bottom: 1px solid #d8a1a8;
+}
+
 .burger {
   width: 30px;
   height: 20px;
@@ -81,9 +84,11 @@ nav {
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
+
 .burger {
   display: none;
 }
+
 @media screen and (max-width: 800px) {
   .menu {
     display: none;
@@ -113,7 +118,6 @@ nav {
     top: 145px;
     left: 0;
     width: 100%;
-    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
     z-index: 1;
   }
 
@@ -125,6 +129,7 @@ nav {
     font-size: 24px;
   }
 }
+
 /* menu slut */
 
 p {
@@ -155,3 +160,88 @@ ul {
 img {
   width: 100%;
 }
+
+/* footer lyserød */
+footer {
+  background-color: #d8a1a8; /* Farven på footer */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Afstand mellem ikoner */
+  align-items: center;
+}
+
+.icon-link {
+  display: inline-block;
+}
+
+.footer-icon {
+  transition: transform 0.3s ease;
+}
+
+.footer-content .footer-icon.mail {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-content .footer-icon.linkedin {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-content .footer-icon.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+}
+/* footer lyserød */
+
+/* footer beige */
+.footerbeige {
+  background-color: #cedfce; /* Farven på footer */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Afstand mellem ikoner */
+  align-items: center;
+}
+
+.icon-link {
+  display: inline-block;
+}
+
+.footer-icon {
+  transition: transform 0.3s ease;
+}
+
+.footer-content .footer-icon.mail {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-content .footer-icon.linkedin {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-content .footer-icon.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+}
+
+/* footer beige */

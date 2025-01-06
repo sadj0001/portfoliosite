@@ -107,7 +107,7 @@ p {
     gap: 20px;
     align-items: center;
     padding-inline: 200px;
-    padding-bottom: 30px;
+    padding-bottom: 75px;
   }
 
   .portraet {
@@ -209,7 +209,12 @@ nav {
 }
 
 .menubeige a:hover {
-  color: #cedfce;
+  color: #9eb99e;
+}
+
+/* Aktiv link - streg under for beige menu */
+.menubeige a.active {
+  border-bottom: 1px solid #9eb99e; /* Farven på stregerne */
 }
 
 .burgerbeige {
