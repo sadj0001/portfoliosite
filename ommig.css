@@ -269,6 +269,10 @@ nav {
   h1 {
     margin-bottom: 2rem;
   }
+
+  .logo img {
+    width: 70px;
+  }
 }
 
 @media screen and (min-width: 800px) {

@@ -127,13 +127,14 @@ nav {
     font-size: 24px;
   }
 
+  .logo img {
+    width: 70px;
+  }
+
   /* menu slut */
 
   .kontaktp {
     width: 100%;
-    overflow-wrap: break-word;
-    text-align: justify;
-    hyphens: auto;
   }
 }
 

@@ -148,12 +148,11 @@ a {
     position: absolute;
     bottom: 20%;
     left: 50%;
-    top: 68%;
+    top: 75%;
   }
 
   .lottie-container {
     position: absolute;
-    top: 30%;
     left: 50%;
   }
 }
