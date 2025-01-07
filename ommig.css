@@ -37,15 +37,9 @@ h1 {
   display: block;
   max-width: 100%;
   margin-bottom: 4rem;
+  place-self: end;
 }
 
-.omtekst2 {
-  width: 100%;
-  overflow-wrap: break-word;
-  text-align: justify;
-  hyphens: auto;
-  margin-bottom: 2rem;
-}
 .billede {
   border-radius: 20px;
   margin-bottom: 3rem;
@@ -54,10 +48,10 @@ h1 {
 
 p {
   width: 100%;
-  overflow-wrap: break-word;
-  text-align: justify;
-  hyphens: auto;
   margin-bottom: 2rem;
+}
+.fed {
+  font-weight: 400;
 }
 
 .cv-container {
@@ -277,5 +271,22 @@ nav {
 
   h1 {
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .omtekst2 {
+    margin-inline: auto;
+    width: 70ch;
+  }
+
+  .omtekst1 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .omtekst3 {
+    margin-inline: auto;
+    width: 70ch;
   }
 }

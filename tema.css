@@ -13,6 +13,12 @@ main {
 
 /* menu */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -21,6 +27,7 @@ header {
   align-items: center;
   padding: 25px;
   background-color: #f4f2ec;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
   z-index: 20;
 }
 
@@ -60,7 +67,12 @@ nav {
 }
 
 .menubeige a:hover {
-  color: #cedfce;
+  color: #9eb99e;
+}
+
+/* Aktiv link - streg under for beige menu */
+.menubeige a.active {
+  border-bottom: 1px solid #9eb99e; /* Farven på stregerne */
 }
 
 .burgerbeige {
@@ -76,11 +88,9 @@ nav {
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
-
 .burgerbeige {
   display: none;
 }
-
 @media screen and (max-width: 800px) {
   .menubeige {
     display: none;
@@ -110,6 +120,7 @@ nav {
     top: 145px;
     left: 0;
     width: 100%;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
     z-index: 1;
   }
 
@@ -120,9 +131,8 @@ nav {
   nav.active .menubeige a {
     font-size: 24px;
   }
-}
 
-/* menu slut */
+  /* menu slut */
 
 @media screen and (min-width: 768px) {
   .grid_1_1 {
@@ -145,7 +155,7 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     padding-inline: 100px;
     place-items: center;
-    gap: 10px;
+    gap: 30px;
     padding-block: 100px;
   }
 }
@@ -182,7 +192,7 @@ img {
   border-radius: 20px;
   padding-inline: 20px;
   max-width: 694px;
-  width: 200px;
+  width: 275px;
   font-family: "Playfair Display";
   font-size: large;
   text-decoration: none;
@@ -227,7 +237,7 @@ img {
 
 .laering2 {
   padding-top: 100px;
-  margin-inline: 100px;
+  /* margin-inline: 100px; */
 }
 
 .wireframe {
@@ -287,4 +297,73 @@ img {
   height: 50vh;
   object-fit: cover;
   place-self: end;
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  main {
+    padding-inline: 20px;
+  }
+
+  .linkknap {
+    width: 100%;
+    padding-inline: 40px;
+  }
+
+  .grid_3_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-inline: 100px;
+    place-items: center;
+    gap: 30px;
+    padding-block: 100px;
+  }
+
+  .temaknap {
+    width: 120%;
+  }
+
+  .video {
+    margin-top: 50px;
+  }
+
+  .loesning2,
+  .laering2,
+  .laering4,
+  .laering5 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .laering2 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .proces2 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .billede {
+    width: 100%;
+  }
+
+  .knap {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-inline: auto;
+  }
+}
+
+.p {
+  width: 100%;
+  margin-bottom: 2rem;
+  width: 70ch;
 }

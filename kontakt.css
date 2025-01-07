@@ -222,12 +222,12 @@ button:active {
 @media screen and (min-width: 768px) {
   .kontaktp {
     width: 60ch;
-    margin-left: 100px;
+    margin-left: 120px;
   }
 
   .kontakth1 {
     text-align: left;
-    margin-left: 100px;
+    margin-left: 120px;
   }
 
   .grid_1_1 {
