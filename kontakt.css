@@ -193,10 +193,10 @@ textarea {
 button {
   padding: 12px;
   font-size: 16px;
-  background-color: #cedfce;
+  background-color: #f4f2ec;
   color: #000;
-  border: 1px solid #d0d0d0;
-  border-radius: 8px;
+  border: 3px solid #9eb99e;
+  border-radius: 12px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
   font-family: "Playfair Display", serif;

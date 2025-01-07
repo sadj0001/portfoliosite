@@ -180,6 +180,13 @@ img {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.pakke {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Eksisterende .linkknap */
 .linkknap {
   text-align: center;
   border-inline: 3px solid #9eb99e;
@@ -187,18 +194,26 @@ img {
   padding-block: 10px;
   border-radius: 12px;
   padding-inline: 20px;
-  max-width: 694px;
-  width: 200px;
   font-family: "Lato";
   text-decoration: none;
   color: #000000;
   font-weight: 300;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .linkknap:hover {
   background-color: #9eb99e;
   transform: scale(1.05);
   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.knap {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 300;
 }
 
 .loesning2 {
@@ -216,6 +231,10 @@ img {
 }
 
 .wireframe {
+  order: -1;
+}
+
+.drive {
   order: -1;
 }
 
@@ -256,6 +275,7 @@ img {
 
 .tegning {
   order: -1;
+  margin-bottom: 3rem;
 }
 
 .space {
@@ -273,10 +293,10 @@ main {
   padding-inline: 20px;
 }
 
-.linkknap {
+/* .linkknap {
   width: 100%;
   padding-inline: 40px;
-}
+} */
 
 .grid_3_1 {
   display: grid;
@@ -293,6 +313,7 @@ main {
 
 .video {
   margin-top: 50px;
+  margin-bottom: 6rem;
 }
 
 .laering2 {
@@ -309,18 +330,14 @@ main {
   width: 100%;
 }
 
-/* .knap {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  place-items: center;
-  margin-inline: auto;
-} */
-
 .p {
   width: 100%;
   margin-bottom: 2rem;
   width: 70ch;
+}
+
+.pakke1 {
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -329,6 +346,15 @@ main {
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     padding-inline: 100px;
+  }
+
+  .grid_5_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    padding-inline: 100px;
+    gap: 40px;
+    padding-right: 220px;
   }
 
   .video {
@@ -346,21 +372,17 @@ main {
     place-items: center;
     gap: 150px;
     padding-block: 100px;
+    padding-top: 200px;
+  }
+
+  .pakke {
+    display: block;
+    text-align: left;
   }
 
   .linkknap {
-    text-align: center;
-    border-inline: 3px solid #9eb99e;
-    border-block: 3px solid #9eb99e;
-    padding-block: 10px;
-    border-radius: 12px;
-    padding-inline: 20px;
-    max-width: 694px;
     width: 200px;
-    font-family: "Lato";
-    text-decoration: none;
-    color: #000000;
-    font-weight: 300;
+    margin-left: 0;
   }
 
   .laering4 {
@@ -372,5 +394,9 @@ main {
     padding-top: 50px;
     margin-inline: auto;
     width: 70ch;
+  }
+
+  .kode {
+    width: 400px;
   }
 }
