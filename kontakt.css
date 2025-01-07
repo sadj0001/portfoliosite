@@ -25,7 +25,6 @@ header {
   align-items: center;
   padding: 25px;
   background-color: #f4f2ec;
-  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
   z-index: 20;
 }
 
@@ -68,9 +67,8 @@ nav {
   color: #9eb99e;
 }
 
-/* Aktiv link - streg under for beige menu */
 .menubeige a.active {
-  border-bottom: 1px solid #9eb99e; /* Farven på stregerne */
+  border-bottom: 1px solid #9eb99e;
 }
 
 .burgerbeige {
@@ -118,7 +116,6 @@ nav {
     top: 145px;
     left: 0;
     width: 100%;
-    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
     z-index: 1;
   }
 
@@ -181,7 +178,7 @@ textarea {
   box-sizing: border-box;
   border-radius: 8px;
   background-color: #f7f7f7;
-  border: 1px solid #d0d0d0; /* Meget tynd grå kant */
+  border: 1px solid #d0d0d0;
   transition: all 0.3s ease;
 }
 
@@ -203,7 +200,7 @@ button {
 }
 
 button:hover {
-  background-color: #9eb99e; /* Mørkere grøn ved hover */
+  background-color: #9eb99e;
   transform: scale(1.05);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }

@@ -29,32 +29,33 @@ main {
   position: absolute;
   bottom: 20%; /* Juster afstanden fra bunden */
   left: 50%;
+  top: 75%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-top: 20px solid #000000;
-  cursor: pointer; /* Tilføjer en hånd, når man hover over pilen */
-  transition: all 0.3s ease; /* Gør pilen lidt interaktiv */
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .arrow:hover {
-  transform: translateX(-50%) scale(1.2); /* Forstørrer pilen, når man hover */
+  transform: translateX(-50%) scale(1.2);
 }
 /* ovenstående med arrow har chatgpt hjælpet mig med */
 
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* Sætter højden til 100% af skærmens højde */
+  height: 100vh;
   overflow: hidden;
 }
 
 .hero img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Sørger for at billedet dækker hele området uden at blive forvrænget */
+  object-fit: cover;
 }
 
 .lottie-container {
@@ -63,7 +64,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  pointer-events: none; /* Tillader interaktion med underliggende elementer */
+  pointer-events: none;
 }
 
 .grid_1_1 {
@@ -141,5 +142,18 @@ a {
   .ommigknap,
   .kontaktknap {
     padding-block: 50px;
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    top: 68%;
+  }
+
+  .lottie-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
   }
 }

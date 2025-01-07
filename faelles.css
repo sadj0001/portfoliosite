@@ -163,7 +163,7 @@ img {
 
 /* footer lyserød */
 footer {
-  background-color: #d8a1a8; /* Farven på footer */
+  background-color: #d8a1a8;
   padding: 20px 0;
   text-align: center;
 }
@@ -171,7 +171,7 @@ footer {
 .footer-content {
   display: flex;
   justify-content: center;
-  gap: 30px; /* Afstand mellem ikoner */
+  gap: 30px;
   align-items: center;
 }
 
@@ -205,7 +205,7 @@ footer {
 
 /* footer beige */
 .footerbeige {
-  background-color: #cedfce; /* Farven på footer */
+  background-color: #cedfce;
   padding: 20px 0;
   text-align: center;
 }
@@ -213,7 +213,7 @@ footer {
 .footer-content {
   display: flex;
   justify-content: center;
-  gap: 30px; /* Afstand mellem ikoner */
+  gap: 30px;
   align-items: center;
 }
 
@@ -245,3 +245,7 @@ footer {
 }
 
 /* footer beige */
+
+.logo2 {
+  width: 50px;
+}

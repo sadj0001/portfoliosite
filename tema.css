@@ -7,7 +7,6 @@
 main {
   background-color: #f4f2ec;
   padding: 30px;
-  /* overflow-x: hidden; */
   padding-inline: 100px;
 }
 
@@ -27,7 +26,6 @@ header {
   align-items: center;
   padding: 25px;
   background-color: #f4f2ec;
-  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
   z-index: 20;
 }
 
@@ -70,9 +68,8 @@ nav {
   color: #9eb99e;
 }
 
-/* Aktiv link - streg under for beige menu */
 .menubeige a.active {
-  border-bottom: 1px solid #9eb99e; /* Farven på stregerne */
+  border-bottom: 1px solid #9eb99e;
 }
 
 .burgerbeige {
@@ -135,11 +132,6 @@ nav {
 
 /* menu slut */
 
-h1 {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
 h2 {
   margin-bottom: 2rem;
 }
@@ -154,20 +146,14 @@ h2 {
   height: 30vh;
 }
 
-img {
-  width: 100%;
-  padding-block: 30px;
-}
-
 .temaknap {
   text-align: center;
   border-inline: 3px solid #9eb99e;
   border-block: 3px solid #9eb99e;
+  width: 180%;
   padding-block: 20px;
   border-radius: 20px;
   padding-inline: 20px;
-  max-width: 694px;
-  width: 275px;
   font-family: "Playfair Display";
   font-size: large;
   text-decoration: none;
@@ -186,7 +172,6 @@ img {
   align-items: center;
 }
 
-/* Eksisterende .linkknap */
 .linkknap {
   text-align: center;
   border-inline: 3px solid #9eb99e;
@@ -227,7 +212,6 @@ img {
 
 .laering2 {
   padding-top: 100px;
-  /* margin-inline: 100px; */
 }
 
 .wireframe {
@@ -287,16 +271,14 @@ img {
 img {
   width: 100%;
   margin-inline: auto;
+
+  width: 100%;
+  padding-top: 30px;
 }
 
 main {
   padding-inline: 20px;
 }
-
-/* .linkknap {
-  width: 100%;
-  padding-inline: 40px;
-} */
 
 .grid_3_1 {
   display: grid;
@@ -305,10 +287,6 @@ main {
   place-items: center;
   gap: 30px;
   padding-block: 100px;
-}
-
-.temaknap {
-  width: 120%;
 }
 
 .video {
@@ -338,6 +316,19 @@ main {
 
 .pakke1 {
   margin-bottom: 1rem;
+}
+
+.tilbage {
+  font-family: "Lato";
+  color: #000000;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -386,17 +377,43 @@ main {
   }
 
   .laering4 {
-    padding-top: 100px;
+    padding-top: 50px;
     margin-inline: auto;
     width: 70ch;
   }
   .laering5 {
-    padding-top: 50px;
+    padding-top: 35px;
     margin-inline: auto;
     width: 70ch;
   }
 
   .kode {
     width: 400px;
+  }
+
+  .spil {
+    width: 375px;
+    place-self: end;
+  }
+
+  img {
+    width: 100%;
+    padding-block: 30px;
+  }
+
+  .tilbage {
+    padding-inline: 100px;
+    font-family: "Lato";
+    color: #000000;
+    font-weight: 300;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .temaknap {
+    width: 120%;
   }
 }
